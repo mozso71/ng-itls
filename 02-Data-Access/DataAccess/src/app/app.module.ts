@@ -12,6 +12,7 @@ import { SkillsListComponent } from './skills/skills-list/skills-list.component'
 import { SkillsEditComponent } from './skills/skills-edit/skills-edit.component';
 import { SkillRowComponent } from './skills/skill-row/skill-row.component';
 import { FormsModule } from '@angular/forms';
+import { HttpErrorInterceptor } from './shared/http-err/http-error.interceptor';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,13 @@ import { FormsModule } from '@angular/forms';
     HttpClientModule,
     SharedModule,
   ],
-  providers: [],
+  providers: [
+    // {
+    //   provide: HTTP_INTERCEPTORS,
+    //   useClass: HttpErrorInterceptor,
+    //   multi: true
+    // }
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
