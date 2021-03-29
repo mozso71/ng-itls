@@ -1,0 +1,22 @@
+<app-markdown-renderer [md]="'netcore'"></app-markdown-renderer>
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>ObservableCrudComponent</mat-card-title>
+  </mat-card-header>
+  <mat-card-content fxLayout="column">
+    <button mat-raised-button (click)="getSkills()">Get Skills</button>
+    <button mat-raised-button (click)="getSkill()">Get Skill</button>
+    <button mat-raised-button (click)="insertSkill()">Insert Skill</button>
+    <button mat-raised-button (click)="updateSkill()">Update Skill</button>
+    <button mat-raised-button (click)="deleteSkill()">Delete Skill</button>
+  </mat-card-content>
+</mat-card>
+
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>Result from {{ fname }}</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <pre>{{ result | json }}</pre>
+  </mat-card-content>
+</mat-card>

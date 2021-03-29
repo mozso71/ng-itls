@@ -1,0 +1,47 @@
+[
+  {
+    "url": "routingbasics",
+    "title": "Routing Basics"
+  },
+  {
+    "url": "parammap",
+    "title": "paramMap"
+  },
+  {
+    "url": "router-state",
+    "title": "Router State"
+  },
+  {
+    "url": "childroutes",
+    "title": "Child Routes"
+  },
+  {
+    "url": "secondary",
+    "title": "Secondary Routes"
+  },
+  {
+    "url": "lazy-loading",
+    "title": "Lazy Loading"
+  },
+  {
+    "url": "component-less",
+    "title": "Component Less"
+  },
+
+  {
+    "url": "routeguards",
+    "title": "Route Guards"
+  },
+  {
+    "url": "preload",
+    "title": "Preload Data"
+  },
+  {
+    "url": "router-animation",
+    "title": "Router Animations"
+  },
+  {
+    "url": "events",
+    "title": "Router Events"
+  }
+]

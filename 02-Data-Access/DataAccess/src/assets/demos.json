@@ -1,0 +1,14 @@
+[
+  {
+    "url": "observablescurd",
+    "title": "CRUD"
+  },
+  {
+    "url": "adv-httpclient",
+    "title": "Adv HttpClient"
+  },
+  {
+    "url": "json-server",
+    "title": "Json Server"
+  }
+]

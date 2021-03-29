@@ -1,0 +1,27 @@
+<app-markdown-renderer [md]="'json-server'"></app-markdown-renderer>
+
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>JsonServerComponent</mat-card-title>
+  </mat-card-header>
+  <mat-card-content fxLayout="column" fxLayoutGap="16px">
+    <button mat-raised-button (click)="getSkills()">Get Skills</button>
+    <button mat-raised-button (click)="addSkill()">Add a Skill</button>
+    <button mat-raised-button (click)="updateSkill()">Update a Skill</button>
+
+    <button mat-raised-button (click)="deleteSkill()">Delete a Skill</button>
+  </mat-card-content>
+</mat-card>
+
+<div fxLayout="row" fxLayoutAlign="center center">
+  <mat-spinner *ngIf="loading"></mat-spinner>
+</div>
+
+<mat-card *ngIf="!loading">
+  <mat-card-header>
+    <mat-card-title>Result from call</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <pre>{{ result | json }}</pre>
+  </mat-card-content>
+</mat-card>

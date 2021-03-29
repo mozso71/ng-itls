@@ -1,0 +1,23 @@
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>Admin</mat-card-title>
+    <mat-card-subtitle>Select Admin Details</mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content fxLayout="column" fxLayoutGap="16px">
+    <button mat-raised-button [routerLink]="['./admina']">
+      Admin Detail A
+    </button>
+    <button mat-raised-button [routerLink]="['./adminb']">
+      Admin Detail B
+    </button>
+  </mat-card-content>
+</mat-card>
+
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>Yout Choice</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <router-outlet></router-outlet>
+  </mat-card-content>
+</mat-card>
