@@ -18,7 +18,7 @@ export class AdvHttpClientComponent implements OnInit {
 
   observeResponse() {
     this.httpClient
-      .get(`${environment.netcoreapi}api/skills`, {
+      .get(`${environment.api}skills`, {
         observe: 'response',
       })
       .subscribe((response: HttpResponse<any>) => {
@@ -38,7 +38,7 @@ export class AdvHttpClientComponent implements OnInit {
     console.log('adding header:', header);
 
     this.httpClient
-      .get(`${environment.netcoreapi}api/skills`, { headers: header })
+      .get(`${environment.api}skills`, { headers: header })
       .subscribe((data) => {
         console.log('Response using headers variable: ', data);
         this.result = data;
