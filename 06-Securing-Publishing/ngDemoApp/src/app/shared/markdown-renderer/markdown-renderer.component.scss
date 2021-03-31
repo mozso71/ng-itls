@@ -1,0 +1,13 @@
+@import 'theme.scss';
+
+mat-expansion-panel {
+  margin-bottom: 0.5rem;
+}
+
+mat-expansion-panel-header {
+  background-color: mat-color($app-accent);
+}
+
+mat-panel-title {
+  border-bottom: 1px solid mat-color($app-accent);
+}
